@@ -1,0 +1,11 @@
+#main {
+  border : none;
+  background-color: red;
+  width: 408px;
+  height: 408px;
+}
+
+#div1 {
+  display: flex;
+  flex-wrap: wrap;
+}
