@@ -1,11 +1,33 @@
-#main {
-  border : none;
-  background-color: red;
-  width: 408px;
-  height: 408px;
+body {
+  background-color : #e705fc;
+  /*background-color: #e705fc;*/
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  font-family: Verdana, sans-serif;
+  width: auto;
+  height: 650px;
+  align-items: center;
+  background-attachment: fixed;
+
 }
 
-#div1 {
+h1 {
+  color: #fce705;
+  padding: 10px 20px 15px 20px;
+  border: solid 1px white;
+}
+
+#main {
+  display: flex;
+  border : none;
+  background-color: white;
+  width: 450px;
+  height: 450px;
+
+}
+
+#grid {
   display: flex;
   flex-wrap: wrap;
 }
