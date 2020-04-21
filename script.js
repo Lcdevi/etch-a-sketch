@@ -1,30 +1,30 @@
-let draw = document.getElementById("main");
-let playerChoice = Number(window.prompt("Enter a number", ""));;
-//let playerChoice = 50;
-//function to create new divs
-function createDiv() {
-let numberOfCases = playerChoice * playerChoice;
-let i;
-for (i = 0; i < numberOfCases; i++) {
-let size = (450/Math.sqrt(numberOfCases))-2;
-  let div = document.createElement("div");
 
-    div.style.width = size + "px";
-    div.style.height = size +"px";
-    div.style.border = "solid 1px white";
-    div.style.background = "#fcf176";
+let playerChoice2 = Number(window.prompt("Enter a number", ""));
+let totalCases = playerChoice2 * playerChoice2;
+let minus = playerChoice2-1;
+let size2 = (450/playerChoice2);
+let gridexjs = document.getElementById("gridex");
+gridexjs.style.display = "grid";
+gridexjs.style.width = "450px";
+gridexjs.style.height="450px";
+gridexjs.style.gridTemplateColumns= "repeat("+minus+", " + size2 + "px) 1fr";
+gridexjs.style.gridTemplateRows= "repeat("+playerChoice2+", " + size2 + "px) 1fr";
 
-    document.getElementById("grid").appendChild(div);
-
-
-    console.log(size);
-  }
-  draw.addEventListener("mouseover", function( event ) {
-    // on met l'accent sur la cible de mouseover
-    event.target.style.backgroundColor = "black";
-
-  }, false);
-
+function createDiv2 () {
+  let i;
+  for (i = 0; i < totalCases; i++) {
+let div2 = document.createElement("div");
+div2.style.border = "solid 1px white";
+div2.style.background = "#fcf176";
+document.getElementById("gridex").appendChild(div2);
 }
+};
+createDiv2();
 
-createDiv();
+gridexjs.addEventListener("mouseover", function( event ) {
+  event.target.style.backgroundColor = "black";
+
+}, false);
+console.log(size2);
+console.log(minus);
+console.log(totalCases);
