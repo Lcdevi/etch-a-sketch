@@ -1,19 +1,27 @@
 body {
-  background-color : #e705fc;
-  /*background-color: #e705fc;*/
   display: flex;
   flex-direction: column;
-  font-size: 20px;
-  font-family: Verdana, sans-serif;
-  width: auto;
-  height: 650px;
+  background-color: #00ce9a;
+  font-family: sans-serif;
+  color : #0033ce;
   align-items: center;
-  background-attachment: fixed;
+  width: auto;
+  height: auto;
+}
+
+#container {
+  width : 600px;
+  height: 600px;
+  border : solid 0.08em white;
+  display: grid;
 
 }
 
-h1 {
-  color: #fce705;
-  padding: 10px 20px 15px 20px;
-  border: solid 1px white;
+.newdiv {
+  border : solid 1px white;
+  background-color: #fcfc6a;
+}
+
+.black {
+  background-color: black;
 }
