@@ -17,12 +17,12 @@ createGridInit();
 colorBlack();
 
 function createGridInit () {
-  createGrid(playerChoice = 12);
+  createGrid(playerChoice = 35);
   }
 
 function createGrid (playerChoice) {
   totalCases = playerChoice * playerChoice;
-  size = 600/playerChoice;
+  size = 500/playerChoice;
   minus = playerChoice-1;
   cont.style.gridTemplateColumns= "repeat("+minus+", " + size + "px) 1fr";
   cont.style.gridTemplateRows= "repeat("+minus+", " + size + "px) 1fr";
