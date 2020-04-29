@@ -1,25 +1,85 @@
+@font-face {
+    font-family: 'balooregular';
+    src: url('fonts/baloo-regular-webfont.woff2') format('woff2'),
+         url('fonts/baloo-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body {
   display: flex;
   flex-direction: column;
-  background-color: #00ce9a;
-  font-family: sans-serif;
-  color : #0033ce;
+  background-color: #c60919;
+  font-family: balooregular, sans-serif;
+  color : white;
   align-items: center;
   width: auto;
-  height: auto;
+  height: 670px;
+}
+
+h1 {
+  font-size: 50px;
+  height: 60px;
+  text-shadow: 3px 3px 1px #6d0811;
 }
 
 #container {
-  width : 600px;
-  height: 600px;
+  width : 500px;
+  height: 500px;
   border : solid 0.08em white;
   display: grid;
+  box-shadow: 5px 5px 1px #6d0811;
+}
 
+#global {
+  display: flex;
+  flex-direction: row;
+  /*width: 939px;*/
+  justify-content: flex-end;
+}
+
+#credit {
+  width: 200px;
+  padding-right: 50px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+#buttons {
+  display: flex;
+  flex-direction: column;
+  padding-left: 50px;
+  font-size: 22px;
+  width: 200px;
+}
+a {
+  color:white;
+  text-decoration: none;
+}
+#btncolor, #btnblack, #btncreategrid, #btnerase {
+  background: white;
+  color : black;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border : none;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  margin-left: 0px;
+  margin-right: 18px;
+  box-shadow: 2px 2px 1px #6d0811;
+
+}
+
+#buttons button:hover {
+  box-shadow: 4px 4px 1px #6d0811;
 }
 
 .newdiv {
   border : solid 1px white;
-  background-color: #fcfc6a;
+  /*background-color: #fcfc6a;*/
+  background-color: white;
 }
 
 .black {
