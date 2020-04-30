@@ -17,7 +17,7 @@ createGridInit();
 colorBlack();
 
 function createGridInit () {
-  createGrid(playerChoice = 35);
+  createGrid(playerChoice = 50);
   }
 
 function createGrid (playerChoice) {
